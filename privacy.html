@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pool 隐私政策 / Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.7 -apple-system, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+         max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; color: #1c1c1e; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e5e5ea; background: #000; } a { color: #6ca8ff; } }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 32px; }
+  .updated { color: #8e8e93; font-size: 14px; }
+  .lang { color: #8e8e93; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; margin-top: 40px; }
+  ul { padding-left: 20px; }
+  code { background: rgba(127,127,127,.15); padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<h1>Pool 隐私政策</h1>
+<p class="updated">最后更新：2026-06-05</p>
+
+<p>Pool（“本应用”）是一个拼车信息撮合社区，帮助你找到同路、时间相近的人一起拼车。本政策说明我们收集哪些信息、如何使用与保护，以及你如何删除它们。</p>
+
+<h2>我们收集什么</h2>
+<ul>
+  <li><strong>账号标识</strong>：通过 Apple 登录获得的用户标识。</li>
+  <li><strong>你填写的资料</strong>：昵称、微信号。</li>
+  <li><strong>护照认证信息</strong>：你上传的护照照片，以及从中自动抽取的姓名、国籍、护照号后 4 位、护照号的不可逆哈希值、有效期。</li>
+  <li><strong>你发布的内容</strong>：拼车行程（上下车点、时间、航班号、行李、人均预期、备注等）。</li>
+</ul>
+
+<h2>我们如何使用</h2>
+<p>用于撮合拼车、通过护照认证提升社区可信度、保障安全与风控、处理举报与投诉。我们不会出售你的个人信息，也不会用于广告画像。</p>
+
+<h2>微信号如何保护</h2>
+<p>你的微信号单独存储，不随公开资料下发。只有已通过护照认证的用户，在打开你的帖子详情时才能看到，以降低被批量抓取的风险。</p>
+
+<h2>护照照片如何保护</h2>
+<p>护照原图存放于私有加密存储空间，客户端无法读取，仅服务端在核验时下载。核验由 Google Gemini 完成：图片仅在核验请求中即时传输用于判定，<strong>不在第三方长期留存</strong>。我们仅保存护照号后 4 位与不可逆哈希用于审计与去重，<strong>不保存完整护照号明文</strong>。护照认证仅用于提升可信度，不构成法律实名。</p>
+
+<h2>第三方服务</h2>
+<ul>
+  <li><strong>Apple</strong>（“通过 Apple 登录”身份验证）</li>
+  <li><strong>Supabase</strong>（数据库与私有存储，数据托管）</li>
+  <li><strong>Google Gemini</strong>（护照照片自动核验）</li>
+</ul>
+<p>上述服务各自的隐私政策适用于其处理过程。</p>
+
+<h2>数据保留与删除</h2>
+<p>数据在你使用期间保留。你可随时在应用内 <strong>「我的 → 删除账号」</strong> 永久删除账号。删除后我们会清除你的账号、资料、微信号、拼车记录以及护照存档文件，<strong>不可恢复</strong>。</p>
+
+<h2>儿童</h2>
+<p>本应用面向成年旅客，不面向 13 岁以下儿童，也不会有意收集其信息。</p>
+
+<h2>联系我们</h2>
+<p>如对隐私有任何疑问，请联系：<a href="mailto:jmiochvjk@gmail.com">jmiochvjk@gmail.com</a></p>
+
+<hr>
+
+<p class="lang">English Summary</p>
+<p>Pool is a carpool-matching community for travelers in Korea. We collect: your Apple Sign-In identifier, the nickname and WeChat ID you enter, your passport photo (for trust verification) and data extracted from it (name, nationality, last 4 digits of the passport number, an irreversible hash of the full number, and expiry date), and the ride posts you create.</p>
+<p>We use this data only to match riders, verify trust, keep the community safe, and handle reports. We never sell your data. Your WeChat ID is stored separately and shown only to verified users who open your post. Passport images are stored in private encrypted storage, are not readable by the client, and are sent to Google Gemini only momentarily for automated verification (not retained by the third party). We keep only the last 4 digits and an irreversible hash of the passport number — never the full number in plaintext.</p>
+<p>Third parties: Apple (sign-in), Supabase (backend/storage), Google Gemini (passport verification).</p>
+<p>You can permanently delete your account and all associated data anytime in the app under <strong>“我的 → 删除账号” (Me → Delete Account)</strong>. Contact: <a href="mailto:jmiochvjk@gmail.com">jmiochvjk@gmail.com</a></p>
+
+</body>
+</html>
