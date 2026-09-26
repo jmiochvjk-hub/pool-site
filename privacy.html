@@ -20,7 +20,7 @@
 <body>
 
 <h1>Pool 隐私政策</h1>
-<p class="updated">最后更新：2026-09-10</p>
+<p class="updated">最后更新：2026-09-26</p>
 
 <p>Pool（“本应用”）是一个拼车信息撮合社区，帮助你找到同路、时间相近的人一起拼车。本政策说明我们收集哪些信息、如何使用与保护，以及你如何删除它们。</p>
 
@@ -30,21 +30,23 @@
   <li><strong>你填写的资料</strong>：昵称、微信号。</li>
   <li><strong>护照认证信息</strong>：你上传的护照照片，以及从中自动抽取的姓名、国籍、护照号后 4 位、护照号的不可逆哈希值、有效期。</li>
   <li><strong>你发布的内容</strong>：拼车行程（上下车点、时间、航班号、行李、人均预期、备注等）。</li>
+  <li><strong>同行与安全记录</strong>：加入申请、评分与评价、举报、拉黑、联系方式交换同意和首次查看记录。</li>
 </ul>
 
 <h2>我们如何使用</h2>
 <p>用于撮合拼车、通过护照认证提升社区可信度、保障安全与风控、处理举报与投诉。我们不会出售你的个人信息，也不会用于广告画像。</p>
 
 <h2>微信号如何保护</h2>
-<p>你的微信号单独存储，不随公开资料下发。只有已通过护照认证的用户，在打开你的帖子详情时才能看到，以降低被批量抓取的风险。</p>
+<p>你的微信号单独存储，不随公开资料下发。只有拼车发起人与已接受的对应成员都通过认证、双方明确同意，且时间处于出发前 72 小时至出发后 24 小时内，双方才能互相查看；同行成员之间不会互相公开。行程完成或取消、存在拉黑关系或超出时间窗口时均不可查看。系统会记录首次查看用于安全审计。</p>
 
 <h2>护照照片如何保护</h2>
-<p>护照原图存放于私有加密存储空间，客户端无法读取，仅服务端在核验时下载。核验由 Google Gemini 完成：图片仅在核验请求中即时传输用于判定，<strong>不在第三方长期留存</strong>。我们仅保存护照号后 4 位与不可逆哈希用于审计与去重，<strong>不保存完整护照号明文</strong>。护照认证仅用于提升可信度，不构成法律实名。</p>
+<p>经你在上传前明确同意，护照照片会存入 Supabase 私有存储，并发送给 Google Gemini 自动核验。客户端无法读取存档原图；第三方处理与保留依其适用条款执行。数据库中的证件号仅保存后 4 位与哈希，不保存完整证件号文本；你上传的原图仍包含完整证件信息。AI 核验无法保证证件真实或证明上传者就是持证人，不构成法律实名。</p>
 
 <h2>第三方服务</h2>
 <ul>
   <li><strong>Apple</strong>（“通过 Apple 登录”身份验证）</li>
   <li><strong>Supabase</strong>（数据库与私有存储，数据托管）</li>
+  <li><strong>Resend</strong>（发送注册及重置密码邮件，处理收件邮箱与邮件内容）</li>
   <li><strong>Google Gemini</strong>（护照照片自动核验）</li>
 </ul>
 <p>上述服务各自的隐私政策适用于其处理过程。</p>
@@ -62,8 +64,9 @@
 
 <p class="lang">English Summary</p>
 <p>Pool is a carpool-matching community for travelers in Korea. We collect: your Apple Sign-In identifier and email address, or the email address you provide when registering an email account; the nickname and WeChat ID you enter; your passport photo (for trust verification) and data extracted from it (name, nationality, last 4 digits of the passport number, an irreversible hash of the full number, and expiry date); and the ride posts you create.</p>
-<p>We use this data only to match riders, verify trust, keep the community safe, and handle reports. We never sell your data. Your WeChat ID is stored separately and shown only to verified users who open your post. Passport images are stored in private encrypted storage, are not readable by the client, and are sent to Google Gemini only momentarily for automated verification (not retained by the third party). We keep only the last 4 digits and an irreversible hash of the passport number — never the full number in plaintext.</p>
-<p>Third parties: Apple (sign-in), Supabase (backend/storage), Google Gemini (passport verification).</p>
+<p>We also collect join requests, ratings and reviews, reports, blocks, consent to exchange contact details, and first-access audit records. We use data to match riders, verify trust, keep the community safe, and handle reports. We never sell your data. WeChat IDs are exchanged only between a verified host and an accepted verified member after mutual consent, from 72 hours before departure to 24 hours afterwards, while the ride remains active. Other members cannot see each other's contacts. Cancelled, completed, blocked or expired exchanges do not disclose contact details.</p>
+<p>With your explicit consent before upload, passport images are stored privately in Supabase and sent to Google Gemini for automated verification, subject to the provider's applicable processing and retention terms. Extracted passport numbers are stored only as the last four digits and a hash; the retained original photo still contains full document information. AI verification cannot prove authenticity or that the uploader owns the document.</p>
+<p>Third parties: Apple (sign-in), Supabase (authentication/backend/storage), Resend (email delivery and email content), Google Gemini (passport verification).</p>
 <p>You can permanently delete your account and all associated data anytime in the app under <strong>“我的 → 删除账号” (Me → Delete Account)</strong>. Contact: <a href="mailto:jmiochvjk@gmail.com">jmiochvjk@gmail.com</a></p>
 
 </body>
